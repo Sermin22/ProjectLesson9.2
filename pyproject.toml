@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "projectlesson9-2"
+version = "0.1.0"
+description = ""
+authors = ["Sergey Minin <sm.minins@gmail.com>"]
+readme = "README.md"
+packages = [{include = "projectlesson9"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
