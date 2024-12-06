@@ -33,7 +33,7 @@ def filter_russian_names(file_clear_names: list) -> list:
 
 
 def filter_english_names(file_clear_names: list) -> list:
-    """Формирования текста с английскими именами"""
+    """Формирования списка с английскими именами"""
     new_file_names = []
     for name in file_clear_names:
         if not is_cyrillic(name):

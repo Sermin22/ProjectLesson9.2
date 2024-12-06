@@ -23,6 +23,7 @@ def is_cyrillic(name: str) -> bool:
 
 
 def filter_russian_names(file_clear_names: list) -> list:
+    """Формирования списка с русскими именами"""
     new_file_names = []
     for name in file_clear_names:
         if is_cyrillic(name):
@@ -31,6 +32,7 @@ def filter_russian_names(file_clear_names: list) -> list:
 
 
 def filter_english_names(file_clear_names: list) -> list:
+    """Формирования списка с английскими именами"""
     new_file_names = []
     for name in file_clear_names:
         if not is_cyrillic(name):
@@ -39,6 +41,7 @@ def filter_english_names(file_clear_names: list) -> list:
 
 
 def save_to_file(file_names: str, names: str) -> None:
+    """Запись файла txt с именами"""
     with open("data/" + file_names, "w", encoding="utf-8") as file:
         file.write(names)
 
